@@ -1,0 +1,30 @@
+header.page-header
+	.container.page-header-container
+		.row.ai-c.jc-sb
+			.col-auto.d-xll-n.col-md-3
+				button.hamburger.js-hamburger.collapsed(type="button" data-toggle="collapse" data-target=".page-header-menu")
+					span.hamburger-box
+						span.hamburger-inner
+			.col-auto
+				a(href='/')
+					+img('logo.svg','Логотип','logo-img','159')
+			.col-auto.page-header-menu.collapse.p-md-0
+				ul.nav.nav-header
+					li.nav-item
+						a.btn.gray-btn.c-black.btn-sm(type="button" href="services.html") 
+							+img('icons/services-icon-header.svg','','services-icon-header mr-10') 
+							|Услуги
+					li.nav-item
+						a(href='about-agency.html' data-bs-toggle="page").nav-link-header Об агентстве
+					li.nav-item
+						a(href='success.html' ).nav-link-header Кейсы
+					li.nav-item
+						a(href='contacts.html' ).nav-link-header Контакты
+					li.nav-item
+						a(href='/' ).nav-link-header Личный кабинет
+					li.nav-item
+						a(href='tel:8 800 505-34-14' ).nav-link-header 8 800 505-34-14
+			.col-auto
+				a.btn.btn-black.btn-sm(type="button" data-bs-toggle="modal" data-bs-target="#modal-enter") Оставить заявку
+
+

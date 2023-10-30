@@ -1,0 +1,288 @@
+extends /layout/page
+
+block content
+    .container 
+        .row
+            .col 
+                .index-title  Маркетинг  
+                .row.d-flex.align-items-center
+                    .index-title.indent-h1 с любовью 
+                    .heart-icon     
+                button.btn.btn-green.btn-lg.mt-24.mt-md-45 Обсудить проект
+    .container.mt-30.mt-lg-100 
+        .row 
+            .col
+                .par-15.c-gray-middle Об агентстве
+            .col-lg-9.mt-14.mt-lg-0  
+                h2 iActions — креативное технологичное маркетинговое агентство.
+                .row.mt-14.mt-lg-40.mt-xl-70 
+                    .col 
+                    .col-lg-8 
+                        .par-25 С 2008 года обеспечиваем маркетинговую поддержку производителям потребительских товаров и услуг России и СНГ.
+                .row.mt-30.mt-lg-40.mt-xl-70  
+                    .col-sm-6.col-md-4 
+                        .advantage 
+                            .par-20 13 лет на рынке маркетинговых услуг
+                    .col-sm-6.col-md-4  
+                        .advantage
+                            .par-20 700+ <br> реализованных проектов
+                    .col-sm-6.col-md-4 
+                        .advantage  
+                            .par-20 Уникальная платформа для реализации промоакций
+                    .col-sm-6.col-md-4.mt-lg-30.mt-xl-70 
+                        .advantage
+                            .par-20 Собственный колл-центр с 2500+ операторами
+                    .col-sm-6.col-md-4.mt-lg-30.mt-xl-70
+                        .advantage 
+                            .par-20 Оператор по обработке персональных данных
+                    .col-sm-6.col-md-4.mt-lg-30.mt-xl-70
+                        .advantage  
+                            .par-20 13 патентов на собственные IT‑разработки
+                .row.mt-40.mt-lg-40.mt-xl-70
+                    .col 
+                    .col-md-12.col-xl-8
+                        .about-agency
+                            .person-list
+                                +img('per-1.png','Лайк','person-item')
+                                +img('per-2.png','Лайк','person-item')     
+                                +img('per-3.png','Лайк','person-item')   
+                            a.btn.btn-black.btn-lg Подробнее об агенстве
+        .row.mt-40.mt-lg-80.mt-xl-160 
+            .col 
+            .col-lg-9
+                h2 Оказываем комплекс услуг
+        .row
+            .col 
+                h2 для вашего бренда
+        .row 
+            .col 
+            .col-6.col-xl-4 
+                .par-65 30+ 
+                .par-25 инструментов продвижения брендов
+        .row.mt-40.mt-md-70  
+            .col-lg-3
+                .par-15.c-gray-middle Услуги
+            .col.gap-5.mt-14.mt-lg-0 
+                .services.justify-content-between.d-flex
+                    .par-25 IT-разработка
+                    .par-15 01
+                .services.justify-content-between.d-flex.mt-40.mt-md-40  
+                    .par-25 Мотивационные программы для продавцов
+                    .par-15 02
+                .services.justify-content-between.d-flex.mt-40.mt-md-40  
+                    .par-25 Производство рекламных материалов
+                    .par-15 03
+                .services.justify-content-between.d-flex.mt-40.mt-md-40  
+                    .par-25 Повышение продаж
+                    .par-15 04
+                .services.justify-content-between.d-flex.mt-40.mt-md-40  
+                    .par-25 Реклама
+                    .par-15 05
+                button.btn.gray-border-btn.btn-lg.w-100.mt-40.mt-md-60 Все услуги
+        .row.mt-40.mt-md-70 
+            .col-lg-3 
+                .par-30 Подобрать комплекс услуг
+            .col.mt-20.mt-lg-0  
+                .you-want 
+                    .par-25.c-white Вы хотите
+                    .d-flex.gap-15.mt-30.flex-wrap
+                        .you-want__service
+                            .par-15 Увеличить продажи
+                        .you-want__service.active  
+                            .par-15 Вывести бренд на рынок
+                        .you-want__service
+                            .par-15 Организовать мероприятие
+                        .you-want__service
+                            .par-15 Организовать мероприятие
+                        .you-want__service
+                            .par-15 Увеличить продажи
+                        .you-want__service
+                            .par-15 Вывести проект онлайн
+                        .you-want__service
+                            .par-15 Сделать фирменный стиль
+                        .you-want__service
+                            .par-15 Сделать ребрендинг
+                        .you-want__service.active  
+                            .par-15 Добавить новый товар
+                    a.btn.btn-black.btn-lg.mt-25.mt-md-40   Обсудить проект
+        .row.mt-40.mt-md-100
+            .col-lg-3
+                .par-15.c-gray-middle Клиенты
+            .col.mt-14.mt-lg-0 
+                .par-25 Работаем в разных категориях потребительских товаров и услуг    
+                    ul.nav.hidden-xs.mt-20.mt-md-30.nav-border.d-none.d-md-flex.marquee-id
+                        li.nav-item
+                            a(href='#tab-brands-1' role="tab" data-bs-toggle="tab").nav-link.active Непродовольственные товары
+                        li.nav-item
+                            a(href='#tab-brands-2' role="tab" data-bs-toggle="tab").nav-link Продовольственные товары
+                        li.nav-item 
+                            a(href='#tab-brands-3' role="tab" data-bs-toggle="tab").nav-link Торговые сети
+                    select.form-select.select-nav.d-block.d-md-none
+                        option(role="tab" data-target="#tab-brands-1") Непродовольственные товары
+                        option(role="tab" data-target="#tab-brands-2") Продовольственные товары
+                        option(role="tab" data-target="#tab-brands-3") Торговые сети
+    .tab-content.brand-list.d-flex.flex-column.mt-40.mt-md-100 
+        #tab-brands-1.tab-pane.fade.active.show
+            .marquee
+                .marquee-wrap
+                    a(href="/")
+                        +img('brands/bertazzoni.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/liqui.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/tatneft.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/yazm.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/force.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/dimaxx.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/zic.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/moratti.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/texaco.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/abb.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/digma.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/husqvarna.png','','marquee-img') 
+            .marquee.mt-120
+                .marquee-wrap
+                    a(href="/")
+                        +img('brands/patriot.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/polaris.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/rosgoscirk.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/rfs.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/docke.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/leroy.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/archie.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/familia.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/freken-bok.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/light.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/pi-pi.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/studio-tex.png','','marquee-img')
+        #tab-brands-2.tab-pane.fade
+            .marquee
+                .marquee-wrap
+                    a(href="/")
+                        +img('brands/inei.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/mistral.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/moscow-kartofel.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/remit.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/rollton.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/ugleche-pole.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/brest-litovsk.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/dziuga.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/coffee.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/moscow-coffee.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/choco-boy.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/blagoyar.png','','marquee-img') 
+            .marquee.mt-120
+                .marquee-wrap
+                    a(href="/")
+                        +img('brands/pechem-doma.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/ryazan-myka.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/baisad.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/doshirak.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/rus-product.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/znatnye.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/drujba-narodov.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/petruha.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/rybka.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/artfriut.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/belebeevsky.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/maheev.png','','marquee-img')
+        #tab-brands-3.tab-pane.fade
+            .marquee
+                .marquee-wrap
+                    a(href="/")
+                        +img('brands/p-ka.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/dochky-synocky.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/fix-price.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/globus.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/magnit.png','','marquee-img') 
+                    a(href="/")
+                        +img('brands/perekrestok.png','','marquee-img')     
+    .container.mt-60.mt-md-100  
+        .row 
+            .col-4.col-lg-6
+                h2 Проекты
+            .col-4.col-lg-3.d-flex.align-items-center
+                .line.bgc-black
+            .col-4.col-lg-3 
+                h2.text-end 700+  
+        .row
+            .col-lg-6    
+            .col-lg-6.mt-20.mt-md-40 
+                .par-25 Среди наших клиентов небольшие региональные компании и крупные федеральные бренды - более 10 товарных категорий и услуг. И для каждого у нас есть свое решение.
+        .row
+            .col-sm-6
+                a(href="").article-item
+                    img(src="img/product/maheev.jpg" alt="").img-fluid
+                    .article-details
+                        .article-details-text     
+                            .par-20 МахеевЪ: Точно в твоем вкусе 
+                            .par-15.c-gray-middle Акция с чеками в торговой сети "Лента"
+                        .par-15.c-gray-middle 2022
+                a(href="").article-item
+                    img(src="img/product/maheev.jpg" alt="").img-fluid
+                    .article-details
+                        .article-details-text     
+                            .par-20 МахеевЪ: Точно в твоем вкусе 
+                            .par-15.c-gray-middle Акция с чеками в торговой сети "Лента"
+                        .par-15.c-gray-middle 2022
+            .col-sm-6
+                .article-item
+                    img(src="img/blog/mah.png" alt="").img-fluid
+                    .article-details
+                        .article-details-text     
+                            .par-20 МахеевЪ: Точно в твоем вкусе 
+                            .par-15.c-gray-middle Акция с чеками в торговой сети "Лента"
+                        .par-15.c-gray-middle 2022
+                a(href="").article-item
+                    img(src="img/product/maheev.jpg" alt="").img-fluid
+                    .article-details
+                        .article-details-text     
+                            .par-20 МахеевЪ: Точно в твоем вкусе 
+                            .par-15.c-gray-middle Акция с чеками в торговой сети "Лента"
+                        .par-15.c-gray-middle 2022

@@ -1,0 +1,75 @@
+extends /layout/page
+
+block title
+    title Брест-Литовск: Новогодняя сыромагия
+
+block variables
+    - var page = 'contacts'
+block content
+    .container 
+        .row.mt-30.mt-md-10
+            .col-sm-12.col-lg-8  
+                nav(aria-label="breadcrumb")
+                    ol.breadcrumb
+                        li.breadcrumb-item
+                            a(href="/").link-gray-light Главная
+                        li.breadcrumb-item
+                            a(href="succes.html").link-gray-light Портфолио
+                        li(aria-current="page").breadcrumb-item.active Брест-Литовск: Новогодняя сыромагия
+            .col-sm-12.col-lg-4.text-lg-end    
+                .par-15.c-gray с 14 ноября по 25 декабря 2022 года
+            .col.d-block.d-md-none  
+                +img('product/brest-main.jpg' ,'Брест', 'img-fluid mt-30' )
+        .row.mt-30.mt-md-50
+            .col 
+                h2 Савушкин продукт
+        .row.mt-30.mt-md-60  
+            .col-sm-12.col-md-3 
+                .par-15.c-gray О проекте
+            .col-sm-12.col-md-9.mt-16.mt-md-0
+                ul
+                    li.par-15 Акция «Новогодняя Сыромагия» проведена в торговой сети «Пятёрочка»
+                    li.par-15 Каждая пачка даёт возможность выбрать Гарантированный денежный приз из новогодних шаров со скрытым номиналом, сумму приза участник узнает только после открытия шара.
+                    li.par-15 Для участия в розыгрышах других призов, нужно купить от двух пачек акционной продукции. Чем больше пачек, тем больше призов может выиграть участник.
+                    li.par-15 Призовой фонд включает более 34 000 денежных призов, включая Суперпризы – 5 Суперпризов по 50 000 рублей, 5 Суперпризов по 100 000 рублей и 4 Суперприза по 250 000 призов, перечисляемых на банковский счет участника.
+        .row.mt-10.mt-md-50 
+            .col-sm-12.col-md-3
+                .par-15.c-gray.mt-0.mt-md-15 Услуги
+            .col-sm-12.col-md-9.mt-16.mt-md-0.d-flex.gap-16.gap-lg-30.flex-wrap 
+                .tag бренд-стратегия
+                .tag позиционирование
+                .tag ребрендинг
+                .tag мотивация розничных продавцов
+        .row.mt-30.mt-md-50 
+            .col-sm-12.col-md-3
+                .par-15.c-gray Каналы коммуникации
+            .col-sm-12.col-md-9.mt-16.mt-md-0 
+                .par-15.c-black Сайт, SMS, Горячая линия 8-800, WhatsApp-бот, Telegram-бот.
+    .image-full-width.mt-30.mt-md-80.d-none.d-md-block 
+        +img('product/brest-main.jpg' ,'Брест','img-fluid' )
+    .container 
+        .row.mt-30.mt-md-120 
+            .col-sm-12.col-md-6
+                .par-30.c-black Что сделали мы:
+            .col-sm-12.col-md-6.mt-16.mt-md-0  
+                ul 
+                    li.par-15.custom-marker составили правила акции;
+                    li.par-15.custom-marker разработали сайт;
+                    li.par-15.custom-marker подключили остальные каналы коммуникации;
+                    li.par-15.custom-marker настроили механику акции;
+                    li.par-15.custom-marker обеспечили сбор базы данных участников, проверку чеков через ФНС и коммуникацию с участниками, провели розыгрыши призов;
+                    li.par-15.custom-marker закупили и отправили вещественные призы, уплатили налог за получателей призов и оформили всю сопроводительную документацию;
+                    li.par-15.custom-marker подготовили итоговую отчетность о результатах проведенной кампании с аналитическими выводами об активности участников.
+        .row.mt-30.mt-md-160 
+            .col-sm-12.col-6.col-md-3.d-none.d-md-block 
+                .par-15.c-gray.mt-3 Следующий проект
+            .col-sm-12.col-6.col-md-3.d-none.d-md-block 
+                +img("icons/long-arrow.svg" )
+            .col-sm-12.col-md-6
+                a(href="").next-product
+                    +img("product/laiki-next-project.jpg", 'Следующий проект', 'img-fluid' )
+                    .par-25.c-black.mt-20 Московская кофейня на паях
+
+
+
+

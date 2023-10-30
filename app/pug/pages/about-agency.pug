@@ -1,0 +1,219 @@
+extends /layout/page
+
+block title
+    title Об агентстве iActions
+
+block variables
+    - var page = 'about-agency'
+block content 
+    .container 
+        .row.mt-30.mt-md-10
+            .col-sm-12.col-md  
+                nav(aria-label="breadcrumb")
+                    ol.breadcrumb
+                        li.breadcrumb-item
+                            a(href="/").breadcrumb-item Главная
+                        li(aria-current="page").breadcrumb-item.active Об агентстве iActions
+        .row.mt-15.mt-md-50
+            .col-sm-12.col-lg-3 
+            .col-sm-12.col-lg-9 
+                h2 Об агентстве iActions
+        .row.mt-15.mt-lg-50  
+            .col-sm-12.col-lg-3 
+                .par-15.c-gray.mt-0.mt-md-10.d-none.d-lg-block Кто мы
+            .col-sm-12.col-lg-9 
+                .par-25.c-green iActions — креативное технологичное маркетинговое агентство. С 2008 года обеспечиваем маркетинговую поддержку производителям потребительских товаров и услуг России и СНГ. 
+        .row.mt-30.lg-80 
+            .col-sm-12.col-lg-3
+            .col-sm-12.col-md.mr-0.mr-md-30
+                .advantage 
+                    .par-20.c-black Расширяем каналы продаж и выводим торговые марки на новые рынки. Сопровождаем бренды на всех стадиях развития: от создания до полного ребрендинга.
+            .col-sm-12.col-md.mr-0.ml-md-30
+                .advantage 
+                    .par-20 С нами вам не нужно искать других подрядчиков - закроем годовой маркетинговый план в режиме одного окна. Решим любую маркетинговую задачу - от разработки выставочного стенда, промоакции, сайта до комплексного продвижения бренда.
+        .row.mt-10.mt-md-50.mt-lg-80 
+            .col-sm-12.col-lg-3
+            .col-sm-12.col-md.mr-0.mr-md-30.d-flex.align-items-center
+                .par-65.c-green 20% 
+                .line.bgc-green.ml-50.ml-md-50
+            .col-sm-12.col-md.mr-0.ml-md-30.mt-30.mt-md-0
+                .par-20 При заключении договора на срок от 1 года дарим 20% скидку на весь комплекс маркетинговых услуг.
+        .row.mt-30.mt-md-50.mt-lg-80
+            .col-sm-12.col-lg-3
+            .col-sm-12.col-md 
+                a.btn.btn-black.btn-lg Скачать презентацию
+        .row.mt-40.mt-md-60.mt-lg-160
+            .col-sm-12.col-md-6.col-lg-3
+                .heart-icon.ml-0
+            .col-sm-12.col-md-6.col-lg-3.mt-30.mt-md-0
+                .par-25.c-black Наша миссия
+                .par-15.c-black.mt-10.mt-md-20 Увеличить выручку клиента в каналах продаж с помощью современных маркетинговых инструментов 
+            .col-sm-12.col-md-6.col-lg-3.mt-30.mt-lg-0 
+                .par-25.c-black Наши возможности
+                .par-15.c-black.mt-10.mt-md-20 Экономим время клиента за счет автоматизации рекламных процессов
+            .col-sm-12.col-md-6.col-lg-3.mt-30.mt-lg-0 
+                .par-25.c-black Наша цель
+                .par-15.c-black.mt-10.mt-md-20 Сократить затраты клиента на продвижение бренда
+    .image-full-width.mt-30.mt-md-60.mt-lg-160 
+        +img('team.jpg','','img-fluid')
+    .container 
+        .row.mt-60.mt-lg-160
+            .col-sm-12.col-lg-3
+            .col-sm-12.col-lg-9 
+                h2.c-black 6 причин сотрудничать с нашей компанией
+                .row.mt-30.mt-md-50 
+                    .col-sm-12.col-md-4 
+                        .par-25.c-black Экспертность
+                    .col-sm-12.col-md-4.mt-12.mt-md-0
+                        .par-15.c-black Имеем большой опыт в различных отраслях бизнеса и следим за движением рынка
+                    .col-sm-12.col-md-4.text-end.d-none.d-md-block 
+                        .par-15.c-gray 01
+                .line.bgc-black.mt-30.mt-md-50
+                .row.mt-30.mt-md-50 
+                    .col-sm-12.col-md-4 
+                        .par-25.c-black Отсрочка платежей
+                    .col-sm-12.col-md-4.mt-12.mt-md-0 
+                        .par-15.c-black Финансово стабильны и готовы предоставить отсрочку от 30 до 180 дней
+                    .col-sm-12.col-md-4.text-end.d-none.d-md-block 
+                        .par-15.c-gray 02
+                .line.bgc-black.mt-30.mt-md-50
+                .row.mt-30.mt-md-50 
+                    .col-sm-12.col-md-4 
+                        .par-25.c-black Отсрочка платежей
+                    .col-sm-12.col-md-4.mt-12.mt-md-0 
+                        .par-15.c-black Финансово стабильны и готовы предоставить отсрочку от 30 до 180 дней
+                    .col-sm-12.col-md-4.text-end.d-none.d-md-block 
+                        .par-15.c-gray 02
+                .line.bgc-black.mt-30.mt-md-50
+                .row.mt-30.mt-md-50 
+                    .col-sm-12.col-md-4 
+                        .par-25.c-black Раннее бронирование услуг
+                    .col-sm-12.col-md-4.mt-12.mt-md-0 
+                        .par-15.c-black Закажите услугу не дожидаясь сезона продаж и получите скидку 10%
+                    .col-sm-12.col-md-4.text-end.d-none.d-md-block 
+                        .par-15.c-gray 03
+                .line.bgc-black.mt-30.mt-md-50
+                .row.mt-30.mt-md-50 
+                    .col-sm-12.col-md-4 
+                        .par-25.c-black Оперативные сроки
+                    .col-sm-12.col-md-4.mt-12.mt-md-0 
+                        .par-15.c-black Работаем быстро за счет собственной технической базы и команды из 29 специалистов
+                    .col-sm-12.col-md-4.text-end.d-none.d-md-block 
+                        .par-15.c-gray 04
+                .line.bgc-black.mt-30.mt-md-50
+                .row.mt-30.mt-md-50 
+                    .col-sm-12.col-md-4 
+                        .par-25.c-black Прозрачность работ
+                    .col-sm-12.col-md-4.mt-12.mt-md-0 
+                        .par-15.c-black Предоставляем дорожную карту проекта, отчеты и презентации по каждому этапу работ
+                    .col-sm-12.col-md-4.text-end.d-none.d-md-block 
+                        .par-15.c-gray 05
+                .line.bgc-black.mt-30.mt-md-50
+                .row.mt-30.mt-md-50 
+                    .col-sm-12.col-md-4 
+                        .par-25.c-black Личный кабинет
+                    .col-sm-12.col-md-4.mt-12.mt-md-0 
+                        .par-15.c-black Отслеживайте статистику и эффективность промо-акций и программ лояльности в личном кабинетеCRM i-actions
+                    .col-sm-12.col-md-4.text-end.d-none.d-md-block 
+                        .par-15.c-gray 06
+                .line.bgc-black.mt-30.mt-md-50
+        .row.mt-40.mt-md-80.mt-lg-160  
+            .col.d-none.d-md-block
+                ul.nav.nav-border 
+                    li.nav-item
+                        a(href='#tab-1' data-bs-toggle="tab").nav-link.active Рекомендательные письма
+                    li.nav-item
+                        a(href='#tab-2' data-bs-toggle="tab").nav-link Лицензии и патенты
+            .col.d-block.d-md-none  
+                select.form-select.select-nav(aria-label="Default select example")
+                    option(data-target="#tab-1") Рекомендательные письма
+                    option(data-target="#tab-2") Лицензии и патенты
+
+
+        .row.tab-content.active.mt-30.mt-md-60
+            #tab-1.tab-pane.fade.active.show
+                .row   
+                    .swiper-documents
+                        .swiper-wrapper
+                            .swiper-slide 
+                                a(href="img/docs/doc-2.jpg" data-fancybox="image")
+                                    +img("docs/doc-2.jpg", '', 'img-fluid')
+                            .swiper-slide 
+                                a(href="img/docs/doc-2.jpg" data-fancybox="image")
+                                    +img("docs/doc-2.jpg", '', 'img-fluid')
+                            .swiper-slide 
+                                a(href="img/docs/doc-2.jpg" data-fancybox="image")
+                                    +img("docs/doc-2.jpg", '', 'img-fluid')
+                            .swiper-slide 
+                                a(href="img/docs/ddoc-2.jpg" data-fancybox="image")
+                                    +img("docs/doc-2.jpg", '', 'img-fluid')
+                            .swiper-slide 
+                                a(href="img/docs/doc-2.jpg" data-fancybox="image")
+                                    +img("docs/doc-2.jpg", '', 'img-fluid')
+                            .swiper-slide 
+                                a(href="img/docs/doc-2.jpg" data-fancybox="image")
+                                    +img("docs/doc-2.jpg", '', 'img-fluid')
+                            .swiper-slide 
+                                a(href="img/docs/doc-2.jpg" data-fancybox="image")
+                                    +img("docs/doc-2.jpg", '', 'img-fluid')
+                            .swiper-slide 
+                                a(href="img/docs/doc-2.jpg" data-fancybox="image")
+                                    +img("docs/doc-2.jpg", '', 'img-fluid')
+                            .swiper-slide 
+                                a(href="img/docs/doc-2.jpg" data-fancybox="image")
+                                    +img("docs/doc-2.jpg", '', 'img-fluid')
+                            .swiper-slide 
+                                a(href="img/docs/doc-2.jpg" data-fancybox="image")
+                                    +img("docs/doc-2.jpg", '', 'img-fluid')           
+                        .slider-control.mt-20.mt-md-40
+                            .swiper-documents-prev
+                            .swiper-documents-next 
+            #tab-2.tab-pane.fade
+                .row   
+                    .swiper-documents
+                        .swiper-wrapper
+                            .swiper-slide 
+                                a(href="img/docs/doc-1.jpg" data-fancybox="image")
+                                    +img("docs/doc-1.jpg", '', 'img-fluid')
+                            .swiper-slide 
+                                a(href="img/docs/doc-1.jpg" data-fancybox="image")
+                                    +img("docs/doc-1.jpg", '', 'img-fluid')
+                            .swiper-slide 
+                                a(href="img/docs/doc-1.jpg" data-fancybox="image")
+                                    +img("docs/doc-1.jpg", '', 'img-fluid')
+                            .swiper-slide 
+                                a(href="img/docs/doc-1.jpg" data-fancybox="image")
+                                    +img("docs/doc-1.jpg", '', 'img-fluid')
+                            .swiper-slide 
+                                a(href="img/docs/doc-1.jpg" data-fancybox="image")
+                                    +img("docs/doc-1.jpg", '', 'img-fluid')
+                            .swiper-slide 
+                                a(href="img/docs/doc-1.jpg" data-fancybox="image")
+                                    +img("docs/doc-1.jpg", '', 'img-fluid')
+                            .swiper-slide 
+                                a(href="img/docs/doc-1.jpg" data-fancybox="image")
+                                    +img("docs/doc-1.jpg", '', 'img-fluid')
+                            .swiper-slide 
+                                a(href="img/docs/doc-1.jpg" data-fancybox="image")
+                                    +img("docs/doc-1.jpg", '', 'img-fluid')
+                            .swiper-slide 
+                                a(href="img/docs/doc-1.jpg" data-fancybox="image")
+                                    +img("docs/doc-1.jpg", '', 'img-fluid')
+                            .swiper-slide 
+                                a(href="img/docs/doc-1.jpg" data-fancybox="image")
+                                    +img("docs/doc-1.jpg", '', 'img-fluid')           
+                        .d-flex.gap-80.mt-20.mt-md-40
+                            .swiper-documents-prev
+                            .swiper-documents-next 
+
+
+
+
+
+
+
+
+
+
+
+

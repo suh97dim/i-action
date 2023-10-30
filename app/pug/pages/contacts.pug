@@ -1,0 +1,50 @@
+extends /layout/page
+
+block title
+    title Контакты
+
+block variables
+    - var page = 'contacts'
+block content
+    .container 
+        .row.mt-0.mt-md-10
+            .col
+                nav(aria-label="breadcrumb")
+                    ol.breadcrumb
+                        li.breadcrumb-item
+                            a(href="/").c-gray-middle Главная
+                        li(aria-current="page").breadcrumb-item.active Контакты
+        .row
+            .col 
+                h2 Контактаня информация
+        .row.mt-30.mt-md-60  
+            .col-sm-3 
+                +img('icons/contact-icon.png','Лайк','contact-icon')
+            .col-sm-9.justify-content-between.d-flex.align-items-center
+                a(href="tel:8-800-505-34-14").phone 8-800-505-34-14 
+        .row.mt-30.mt-md-100 
+            .col-sm-3.d-flex.align-items-center 
+                .par-15.gray-color Почта
+            .col-sm-9.mt-15.mt-md-0 
+                a(href="mailto:info@i-actions.ru").par-25 info@i-actions.ru
+        .row.mt-40  
+            .col-sm-3.d-flex.align-items-center  
+                .par-15.gray-color Адрес
+            .col-sm-9.mt-15.mt-md-0  
+                .par-25 127018, г. вн.тер.г. м.о. Марьина Роща, ул. Полковая, д. 3, стр.1
+        .row.mt-40
+            .col-sm-3.d-flex.align-items-center  
+                .par-15.gray-color Режим работы
+            .col-sm-9.mt-15.mt-md-0  
+                .par-25 пн.-пт: 8.00 — 18.00
+        .row.mt-40  
+            .col-sm-3.d-flex.align-items-center  
+                .par-15.gray-color Реквизиты
+            .col-sm-9.mt-15.mt-md-0 
+                .par-15 Общество с ограниченной ответственностью«Ай-Экшн» (ООО «Ай-Экшн»)127018 <br> г. Москва, вн.тер.г. м.о.Марьина Роща, ул. Полковая, д. 3, стр. 1 <br> тел. 8-800-505-34-14 почта info@i-actions.ru
+        .row.mt-40.mt-md-80.mb-80  
+            .col-sm-3 
+            .col-sm-9 
+                button.btn.btn-lg.btn-green Написать в WhatsApp 
+           
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af2ffde8447617ad0da16d356c8bb684a3c73c1f604f1f7b9380bc853933f93a4&amp;width=100%25&amp;height=630&amp;lang=ru_RU&amp;scroll=true"></script>

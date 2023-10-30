@@ -1,0 +1,30 @@
+@each $color, $value in $color-custom
+	.link-#{"" + $color}
+		color: $value !important
+		text-decoration: none
+		&:hover
+			border-bottom: 1px solid $value	
+		&:focus
+			text-decoration: none
+			
+	.link-#{"" + $color}-decor
+		color: $value !important
+		text-decoration: none
+		&:hover,
+		&:focus
+			text-decoration: underline
+
+.link-no-decor
+	text-decoration: none !important
+
+.link-hover-decor
+	text-decoration: none
+	&:focus-visible
+		text-decoration: underline
+
+.link-bd-dashed
+	text-decoration: none !important
+	border-bottom: 1px dashed
+	&:hover,
+	&:focus-visible
+		border-color: transparent !important

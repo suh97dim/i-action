@@ -1,0 +1,108 @@
+extends /layout/page
+
+block variables
+    - var page = 'services'
+block title
+    title Услуги
+
+block content
+    .container 
+        .row.mt-0.mt-md-10
+            .col
+                nav(aria-label="breadcrumb")
+                    ol.breadcrumb
+                        li.breadcrumb-item
+                            a(href="/").breadcrumb-item Главная
+                        li(aria-current="page").breadcrumb-item.active Услуги
+        .row.mt-10.mt-xl-50
+            .col 
+                h2 Услуги
+        .row.mt-10.mt-xl-60  
+            .col.d-none.d-xl-block
+                ul.nav.nav-border
+                    li.nav-item
+                        a(href='#tab-1' data-bs-toggle="tab").nav-link.active IT-разработка
+                    li.nav-item
+                        a(href='#tab-2' data-bs-toggle="tab").nav-link Мотивационные программы для продавцов
+                    li.nav-item
+                        a(href='#tab-3' data-bs-toggle="tab").nav-link Повышение продаж
+                    li.nav-item
+                        a(href='#tab-4' data-bs-toggle="tab").nav-link Производство рекламных материалов
+                    li.nav-item
+                        a(href='#tab-5' data-bs-toggle="tab").nav-link Реклама
+            .col.d-block.d-xl-none  
+                select.form-select.select-nav(aria-label="Default select example")
+                    option(data-target="#tab-1") IT-разработка
+                    option(data-target="#tab-2") Мотивационные программы для продавцов
+                    option(data-target="#tab-3") Повышение продаж
+                    option(data-target="#tab-4") Производство рекламных материалов
+                    option(data-target="#tab-5") Реклама
+        .row.tab-content
+            #tab-1.tab-pane.fade.active.show  
+                .row.mt-30.mt-lg-40.mt-xl-70  
+                    .col-md-3
+                        +img("/icons/analytics.svg")
+                    .col-md-9.mt-30.mt-md-0
+                        h3 Аналитика
+                        .row.mt-40
+                            .col-lg-4
+                                .advantage 
+                                    .par-20.c-black Look Book с аналитикой по результатам промо
+                                    .par-15.c-black.mt-20 Составим отчет по участникам, чекам, продукции, потраченным на акцию денежным средствам
+                            .col-lg-4
+                                .advantage 
+                                    .par-20.c-black Исследование целевой аудитории
+                                    .par-15.c-black.mt-20 Составим портрет вашего потребителя
+                            .col-lg-4
+                                .advantage 
+                                    .par-20 Чековая аналитика
+                                    .par-15.c-black.mt-20 Проведем исследование ваших покупателей на основании загруженных кассовых чеков
+                .row.mt-30.mt-lg-40.mt-xl-160  
+                    .col-md-3
+                        +img("/icons/development.svg")
+                    .col-md-9.mt-30.mt-md-0
+                        h3 Разработка для вас
+                        .row.mt-40
+                            .col-lg-4
+                                .advantage 
+                                    .par-20.c-black Корпоративные сайты
+                                    .par-15.c-black.mt-20 Сделаем прототип, дизайн, верстку, программирование, установим коды Яндекс метрики и гугл аналитики, сделаем адаптивную верстку и верстку под мобильные устройства
+                            .col-lg-4
+                                .advantage 
+                                    .par-20.c-black Мобильные приложения
+                                    .par-15.c-black.mt-20 Разработаем приложение для проведения промо-акций, контроля работы торговых представителей и продавцов, защиты подлинности товаров
+                            .col-lg-4
+                                .advantage 
+                                    .par-20 Промосайты
+                                    .par-15.c-black.mt-20 Сделаем прототип, дизайн, верстку, программирование, установим коды Яндекс метрики и гугл аналитики, сделаем адаптивную верстку и верстку под мобильные устройства
+                .row.mt-30.mt-lg-40.mt-xl-160  
+                    .col-md-3
+                        +img("/icons/it-decisions.svg")
+                    .col-md-9.mt-30.mt-md-0
+                        h3 Собственные IT решения
+                        .row.mt-40
+                            .col-lg-4
+                                .advantage 
+                                    .par-20.c-black CRM платформа ORIGINAL защита подлинности
+                                    .par-15.c-black.mt-20 Напечатаем код подлинности на стикере или упаковке. Проверяем подлинность товаров через короткий номер СМС 2420 или горячую линию
+                            .col-lg-4
+                                .advantage 
+                                    .par-20.c-black CRM платформа iActions для проведения акций
+                                    .par-15.c-black.mt-20 Предоставим собственную платформу для проведения и аналитики акций: количество регистраций, данные участников, графики активности, отчеты по расходованию призового фонда, информация о статусе доставки
+                            .col-lg-4
+                                .advantage 
+                                    .par-20 CRM платформа iActions для проведения акций
+                                    .par-15.c-black.mt-20 Предоставим собственную платформу для проведения и аналитики акций: количество регистраций, данные участников, графики активности, отчеты по расходованию призового фонда, информация о статусе доставки
+                        .row.mt-lg-40
+                            .col-lg-4
+                                .advantage 
+                                    .par-20.c-black Интеграция с ФНС России
+                                    .par-15.c-black.mt-20 Проверка подлинности кассовых чеков через прямой запрос к налоговой службе
+                            .col-lg-4
+                                .advantage 
+                                    .par-20.c-black Интеграция с вашим ПО по API
+                                    .par-15.c-black.mt-20 Настроим обмен данными с вашей системой
+                            .col-lg-4
+                                .advantage 
+                                    .par-20 Интеграция с платежными шлюзами
+                                    .par-15.c-black.mt-20 Проведем премирование победителей акции напрямую из CRM системы
