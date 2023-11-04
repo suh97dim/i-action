@@ -1,7 +1,7 @@
 extends /layout/page
 
 block title
-    title Блог
+    title Проекты
 
 block content
     .container 
@@ -11,39 +11,39 @@ block content
                     ol.breadcrumb
                         li.breadcrumb-item
                             a(href="/").breadcrumb-item Главная
-                        li(aria-current="page").breadcrumb-item.active Блог
-        .row.mt-10.mt-xl-50
+                        li(aria-current="page").breadcrumb-item.active Проекты
+        .row.mt-10.mt-xl-40
             .col 
-                h2 Блог
+                h2 Проекты
         .row.mt-10.mt-xl-60  
             .col.d-none.d-xl-block
-                ul.nav.nav-border.justify-content-between 
+                ul.nav.nav-border
                     li.nav-item
                         a(href='#tab-1' data-bs-toggle="tab").nav-link.active Все
                     li.nav-item
-                        a(href='#tab-2' data-bs-toggle="tab").nav-link Маркетинговые коммуникации
+                        a(href='#tab-2' data-bs-toggle="tab").nav-link Промоакции
                     li.nav-item
-                        a(href='#tab-3' data-bs-toggle="tab").nav-link Реклама в интернете
+                        a(href='#tab-3' data-bs-toggle="tab").nav-link Программы лояльности
                     li.nav-item
-                        a(href='#tab-4' data-bs-toggle="tab").nav-link Стимулирование продаж
+                        a(href='#tab-4' data-bs-toggle="tab").nav-link Креатив
                     li.nav-item
-                        a(href='#tab-5' data-bs-toggle="tab").nav-link Экспертная 
+                        a(href='#tab-5' data-bs-toggle="tab").nav-link Брендирование
                     li.nav-item
-                        a(href='#tab-6' data-bs-toggle="tab").nav-link Креатив и стратегии
+                        a(href='#tab-6' data-bs-toggle="tab").nav-link Выставочные стенды
                     li.nav-item
-                        a(href='#tab-7' data-bs-toggle="tab").nav-link Производство
+                        a(href='#tab-7' data-bs-toggle="tab").nav-link Конкурсы
                     li.nav-item
-                        a(href='#tab-8' data-bs-toggle="tab").nav-link It Разработки
+                        a(href='#tab-8' data-bs-toggle="tab").nav-link CVM
             .col.d-block.d-xl-none  
-                select.form-select.select-nav(aria-label="Default select example")
+                select.form-select.select-nav()
                     option(data-target="#tab-1") Все
-                    option(data-target="#tab-2") Маркетинговые коммуникации
-                    option(data-target="#tab-3") Реклама в интернете
-                    option(data-target="#tab-4") Стимулирование продаж
-                    option(data-target="#tab-5") Экспертная
-                    option(data-target="#tab-6") Креатив и стратегии
-                    option(data-target="#tab-7") Производство
-                    option(data-target="#tab-8") It Разработки
+                    option(data-target="#tab-2") Промоакции
+                    option(data-target="#tab-3") Программы лояльности
+                    option(data-target="#tab-4") Креатив
+                    option(data-target="#tab-5") Брендирование
+                    option(data-target="#tab-6") Выставочные стенды
+                    option(data-target="#tab-7") Конкурсы
+                    option(data-target="#tab-8") CVM
         .row.tab-content
             #tab-1.tab-pane.fade.active.show  
                 .row
