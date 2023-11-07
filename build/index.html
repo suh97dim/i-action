@@ -293,17 +293,26 @@
       <div class="container-fluid bgc-green mt-70 mt-lg-160 py-40 py-lg-160 form">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3"> <img class="form-img" src="img//bg/form-bg.svg" alt="" width="103"/>
+            <div class="col-md-3"> <img class="form-img" src="img//bg/form-bg.svg" alt="" width="103"/>
             </div>
-            <div class="col-lg-6"> 
+            <div class="col-md-6"> 
               <div class="form mt-40 mt-lg-0">
                 <h2 class="c-white">Давайте обсудим<br> ваш проект </h2>
                 <div class="par-25 c-white mt-16 mt-lg-30">Запишитесь на личную встречу, чтобы познакомиться и обсудить все вопросы онлайн или в офисе</div>
-                <form>
-                  <div class="form-group mt-20 mt-lg-40"> 
-                    <input class="form-control input form-control mt-16" type="text" placeholder="Введите имя">
-                    <input class="form-control input form-control mt-16" type="tel" placeholder="Введите номер телефона">
-                    <input class="form-control input form-control mt-16" type="email" placeholder="Введите email">
+                <form class="form-group needs-validation mt-20 mt-lg-40" novalidate> 
+                  <div class="col-12">
+                    <input class="form-control input mt-16" type="text" placeholder="Введите имя" required>
+                    <div class="invalid-feedback">Введите отчество</div>
+                  </div>
+                  <div class="col-12">
+                    <input class="form-control input mt-16" type="tel" placeholder="Введите номер телефона" required>
+                    <div class="invalid-feedback">Введите отчество</div>
+                  </div>
+                  <div class="col-12">   
+                    <input class="form-control input mt-16" type="email" placeholder="Введите email" required>
+                    <div class="invalid-feedback c-re">Введите отчество</div>
+                  </div>
+                  <div class="col-12">
                     <button class="btn btn-black w-100 mt-20 mt-lg-40" type="submit"> Оставить заявку</button>
                   </div>
                 </form>
@@ -317,7 +326,7 @@
         <div class="container"> 
           <div class="row"> 
             <div class="col-md-4 col-xl-3"> <a class="phone" href="tel:8-800-505-34-14">8-800-505-34-14 </a>
-              <div class="par-12 c-white">г. Москва, вн.тер.г. м.о.Марьина Роща,<br> ул. Полковая, д. 3,</div>
+              <div class="par-12 c-white mt-12">г. Москва, вн.тер.г. м.о.Марьина Роща,<br> ул. Полковая, д. 3,</div>
             </div>
             <div class="col-md-4 col-xl-3">
               <ul>

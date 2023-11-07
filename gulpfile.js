@@ -276,6 +276,13 @@ gulp.task("img:dev", function () {
     .pipe(gulp.dest("dist/img"));
 });
 
+gulp.task("upload:dev", function () {
+  return gulp
+    .src(["app/upload/**/*"])
+    .pipe(newer("dist/upload"))
+    .pipe(gulp.dest("dist/upload"));
+});
+
 gulp.task("img:build", function () {
   return gulp
     .src(["app/img/**/*", "!app/img/icons/sprite/**/*"])
@@ -284,8 +291,20 @@ gulp.task("img:build", function () {
     .pipe(gulp.dest("build/img"));
 });
 
+gulp.task("upload:build", function () {
+  return gulp
+    .src(["app/upload/**/*"])
+    .pipe(webp())
+    .pipe(newer("build/upload"))
+    .pipe(gulp.dest("build/upload"));
+});
+
 gulp.task("img-clean", function () {
   return gulp.src("dist/img/", { read: false }).pipe(clean());
+});
+
+gulp.task("upload-clean", function () {
+  return gulp.src("dist/upload/", { read: false }).pipe(clean());
 });
 
 //-- BROWSERSYNC -----------------------------------------------------------------------------------------
@@ -321,6 +340,10 @@ gulp.task("watch", function () {
     "app/img/**/*",
     gulp.series(["img-clean", "img:dev", "svg-sprite:dev"])
   );
+  gulp.watch(
+    "app/upload/**/*",
+    gulp.series(["upload-clean", "upload:dev", "svg-sprite:dev"])
+  );
 });
 
 //-- LAUNCH TASKS ----------------------------------------------------------------------------------------
@@ -335,7 +358,7 @@ gulp.task(
     "pug:dev",
     "sass:dev",
     "img:dev",
-    gulp.parallel("js", "img:dev", "libs-js:dev", "fonts"),
+    gulp.parallel("js", "img:dev", "upload:dev", "libs-js:dev", "fonts"),
   ])
 );
 
@@ -348,7 +371,7 @@ gulp.task(
     "svg-sprite:build",
     "pug:build",
     "sass:build",
-    gulp.parallel("img:build", "js:build", "libs-js:build", "fonts:build"),
+    gulp.parallel("img:build", "upload:build", "js:build", "libs-js:build", "fonts:build"),
   ])
 );
 
