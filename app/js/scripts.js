@@ -241,24 +241,31 @@ $(function () {
 
   });
 
-  
+
 
   $(function () {
-    var list = $(".cases_block .col-sm-6");
-    var numToShow = 3; //сколько показывать элементов
-    var button = $(".show-content");
-    var numInList = list.length;
-    list.hide();
-    if (numInList > numToShow) {
-      button.show();
+    var button = $(`.show-content`);
+    for (let i = 1; i < 9; i++) {
+      var list = $(`#tab-${i} .col-sm-6`);
+      var numToShow = 8; //сколько показывать элементов
+      let buttonList = $(`#tab-${i}  .show-content`);
+      buttonList.hide()
+      var numInList = list.length;
+      list.hide();
+      if (numInList > numToShow) {
+        buttonList.show();
+      }
+      list.slice(0, numToShow).show();
     }
-    list.slice(0, numToShow).show();
     button.click(function () {
+      var parent = $(this).closest(".tab-pane")
+      let list = parent.find('.col-sm-6')
       var showing = list.filter(':visible').length;
       list.slice(showing - 1, showing + numToShow).fadeIn();
       var nowShowing = list.filter(':visible').length;
+      var numInList = list.length
       if (nowShowing >= numInList) {
-        button.hide();
+        $(this).hide();
       }
     });
   });
