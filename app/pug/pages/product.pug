@@ -4,7 +4,7 @@ block title
     title Брест-Литовск: Новогодняя сыромагия
 
 block variables
-    - var page = 'contacts'
+    - var page = 'product'
 block content
     .container 
         .row.mt-30.mt-md-10
@@ -12,14 +12,14 @@ block content
                 nav(aria-label="breadcrumb")
                     ol.breadcrumb
                         li.breadcrumb-item
-                            a(href="/").link-gray-light Главная
+                            a(href="/") Главная
                         li.breadcrumb-item
-                            a(href="succes.html").link-gray-light Портфолио
+                            a(href="success.html") Портфолио
                         li(aria-current="page").breadcrumb-item.active Брест-Литовск: Новогодняя сыромагия
             .col-sm-12.col-lg-4.text-lg-end    
                 .par-15.c-gray с 14 ноября по 25 декабря 2022 года
             .col.d-block.d-md-none  
-                +img('product/brest-main.jpg' ,'Брест', 'img-fluid mt-30' )
+                img(src='upload/success/brest_main.png').img-fluid.mt-30
         .row.mt-30.mt-md-50
             .col 
                 h2 Савушкин продукт
@@ -46,8 +46,8 @@ block content
             .col-sm-12.col-md-9.mt-16.mt-md-0 
                 .par-15.c-black Сайт, SMS, Горячая линия 8-800, WhatsApp-бот, Telegram-бот.
     .image-full-width.mt-30.mt-md-80.d-none.d-md-block 
-        +img('product/brest-main.jpg' ,'Брест','img-fluid' )
-    .container 
+        img(src='upload/success/brest_main.png').img-fluid
+    .container.mb-60.mb-md-160 
         .row.mt-30.mt-md-120 
             .col-sm-12.col-md-6
                 .par-30.c-black Что сделали мы:
@@ -67,7 +67,7 @@ block content
                 +img("icons/long-arrow.svg" )
             .col-sm-12.col-md-6
                 a(href="").next-product
-                    +img("product/laiki-next-project.jpg", 'Следующий проект', 'img-fluid' )
+                    img(src='upload/success/7ddb9496366fdd85691d024f6cebe37c.jpg').img-fluid
                     .par-25.c-black.mt-20 Московская кофейня на паях
 
 

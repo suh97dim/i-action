@@ -9,6 +9,9 @@ block content
                     .index-title.indent-h1 с любовью 
                     .heart-icon     
                 button.btn.btn-green.btn-lg.mt-24.mt-md-45 Обсудить проект
+    .image-full-width.mt-30.mt-md-80
+        img(src='img/main-banner.jpg').img-fluid
+
     .container.mt-30.mt-lg-100 
         .row 
             .col
@@ -46,7 +49,7 @@ block content
                                 +img('per-1.png','Лайк','person-item')
                                 +img('per-2.png','Лайк','person-item')     
                                 +img('per-3.png','Лайк','person-item')   
-                            a.btn.btn-black.btn-lg Подробнее об агенстве
+                            a.btn.btn-black.btn-lg(type="button" href="services.html") Подробнее об агенстве
         .row.mt-40.mt-lg-80.mt-xl-160 
             .col 
             .col-lg-9
@@ -56,7 +59,7 @@ block content
                 h2 для вашего бренда
         .row 
             .col 
-            .col-6.col-xl-4 
+            .col-6.col-xl-3.mt-20.mt-lg-0 
                 .par-65 30+ 
                 .par-25 инструментов продвижения брендов
         .row.mt-40.mt-md-70  
@@ -78,7 +81,7 @@ block content
                 .services.justify-content-between.d-flex.mt-40.mt-md-40  
                     .par-25 Реклама
                     .par-15 05
-                button.btn.gray-border-btn.btn-lg.w-100.mt-40.mt-md-60 Все услуги
+                a.btn.gray-border-btn.btn-lg.w-100.mt-40.mt-md-60(href="services.html") Все услуги
         .row.mt-40.mt-md-70 
             .col-lg-3 
                 .par-30 Подобрать комплекс услуг
@@ -104,7 +107,7 @@ block content
                             .par-15 Сделать ребрендинг
                         .you-want__service.active  
                             .par-15 Добавить новый товар
-                    a.btn.btn-black.btn-lg.mt-25.mt-md-40   Обсудить проект
+                    a.btn.btn-black.btn-lg.mt-25.mt-md-40   Подобрать услуги
         .row.mt-40.mt-md-100
             .col-lg-3
                 .par-15.c-gray-middle Клиенты
@@ -149,7 +152,7 @@ block content
                         +img('brands/digma.png','','marquee-img') 
                     a(href="/")
                         +img('brands/husqvarna.png','','marquee-img') 
-            .marquee.mt-120
+            .marquee.mt-70.mt-md-120
                 .marquee-wrap
                     a(href="/")
                         +img('brands/patriot.png','','marquee-img') 
@@ -202,7 +205,7 @@ block content
                         +img('brands/choco-boy.png','','marquee-img') 
                     a(href="/")
                         +img('brands/blagoyar.png','','marquee-img') 
-            .marquee.mt-120
+            .marquee.mt-70.mt-md-120
                 .marquee-wrap
                     a(href="/")
                         +img('brands/pechem-doma.png','','marquee-img') 
@@ -245,11 +248,11 @@ block content
                         +img('brands/perekrestok.png','','marquee-img')     
     .container.mt-60.mt-md-100  
         .row 
-            .col-4.col-lg-6
+            .col-6.col-lg-6
                 h2 Проекты
-            .col-4.col-lg-3.d-flex.align-items-center
+            .col.col-lg-3.d-flex.align-items-center
                 .line.bgc-black
-            .col-4.col-lg-3 
+            .col-4.col-lg-3
                 h2.text-end 700+  
         .row
             .col-lg-6    
@@ -257,32 +260,80 @@ block content
                 .par-25 Среди наших клиентов небольшие региональные компании и крупные федеральные бренды - более 10 товарных категорий и услуг. И для каждого у нас есть свое решение.
         .row
             .col-sm-6
-                a(href="").article-item
-                    img(src="img/product/maheev.jpg" alt="").img-fluid
+                a(href="product.html").article-item
+                    img(src="upload/success/maheev_tochno_1.png" alt="").img-fluid
                     .article-details
                         .article-details-text     
                             .par-20 МахеевЪ: Точно в твоем вкусе 
                             .par-15.c-gray-middle Акция с чеками в торговой сети "Лента"
-                        .par-15.c-gray-middle 2022
-                a(href="").article-item
-                    img(src="img/product/maheev.jpg" alt="").img-fluid
-                    .article-details
-                        .article-details-text     
-                            .par-20 МахеевЪ: Точно в твоем вкусе 
-                            .par-15.c-gray-middle Акция с чеками в торговой сети "Лента"
-                        .par-15.c-gray-middle 2022
+                        .par-15.c-gray-middle 2023
             .col-sm-6
-                .article-item
-                    img(src="img/blog/mah.png" alt="").img-fluid
+                a(href="product.html").article-item
+                    img(src="upload/success/baisad_main.png" alt="").img-fluid
                     .article-details
                         .article-details-text     
-                            .par-20 МахеевЪ: Точно в твоем вкусе 
-                            .par-15.c-gray-middle Акция с чеками в торговой сети "Лента"
-                        .par-15.c-gray-middle 2022
-                a(href="").article-item
-                    img(src="img/product/maheev.jpg" alt="").img-fluid
+                            .par-20 Байсад: Все по-новому!
+                            .par-15.c-gray-middle Акция с чеками и отдельными призовыми фондами по торговым сетям на территории Российской...
+                        .par-15.c-gray-middle 2023
+            .col-sm-6
+                a(href="product.html").article-item
+                    img(src="upload/success/brest_main.png" alt="").img-fluid
                     .article-details
                         .article-details-text     
-                            .par-20 МахеевЪ: Точно в твоем вкусе 
-                            .par-15.c-gray-middle Акция с чеками в торговой сети "Лента"
-                        .par-15.c-gray-middle 2022
+                            .par-20 Брест-Литовск: Новогодняя сыромагия
+                            .par-15.c-gray-middle Акция с чеками в торговой сети "Пятёрочка"
+                        .par-15.c-gray-middle 2023
+            .col-sm-6
+                a(href="product.html").article-item
+                    img(src="upload/success/baisad_igrai_main.jpg" alt="").img-fluid
+                    .article-details
+                        .article-details-text     
+                            .par-20 Байсад: Играй и выигрывай!
+                            .par-15.c-gray-middle Акция с чеками на территории Российской Федерации.
+                        .par-15.c-gray-middle 2023
+        .row.mt-40.mt-md-70
+            .col-md-6.d-flex.align-items-center
+                .par-15.c-gray-middle.mx-a.m-md-0.mb-25  Ещё больше работ в нашем портфолио
+            .col-md-6
+                a.btn.btn-black.btn-lg.w-100(type="button" href="success.html") Смотреть портфолио
+    .container-fluid.bgc-gray-light.mt-70.mt-lg-160.py-50.py-xl-160.py-lg-160
+        .container 
+            .row 
+                .col-md-2.align-items-center.d-md-flex 
+                    .par-15.c-gray-middle.text-center Блог
+                .col-md-8.mt-20.mt-md-0
+                    h2.text-center Делимся инсайтами
+                .col-md-2  
+            .row
+                .col-sm-6
+                    a(href="article.html").article-item
+                        img(src="upload/news/new-1.jpg" alt="").img-fluid
+                        .article-details
+                            .article-details-text     
+                                .par-20 Повышение мотивации сотрудников и корпоративное обучение.
+                                .par-15.c-gray-middle Для развития бизнеса необходимо внедрять современные цифровые технологии. Они помогают автоматизировать бизнес-процессы, улучшить эффективность работы компании. 
+                .col-sm-6
+                    a(href="article.html").article-item
+                        img(src="upload/news/new-2.jpg" alt="").img-fluid
+                        .article-details
+                            .article-details-text     
+                                .par-20 Реклама у блогеров: полезные советы.
+                                .par-15.c-gray-middle Наряду с традиционными средствами рекламы, важно использовать современные методы, возникшие относительно недавно, например, рекламу у блогеров.
+            .row
+                .col-sm-3.col-md-4 
+                .col-sm-6.col-md-4  
+                    a.btn.btn-white.btn-lg.mt-40.mt-md-60.mx-a(href="news.html") Открыть блог
+                .col-sm-3.col-md-4  
+            .line.bgc-gray.my-50.mt-lg-70
+            .row.subscribe
+                .col-lg-3
+                    img(src="img/icons/subscribe.png" alt="").mx-a
+                .col-lg-6.mt-30.mt-lg-0
+                    .par-25 Подпишитесь на нашу рассылку — в ней мы весело и экспертно пишем о рекламе, брендинге и современных трендах.
+                    form.needs-validation.row.mt-30(novalidate)
+                        .col-sm-8 
+                            input(type="email" class="form-control" class="input" placeholder="Введите email" required)
+                            .invalid-feedback Введите email
+                        .col-sm-4.mt-16.mt-sm-0  
+                            button.btn.btn-black.btn-lg(type="submit") Подписаться
+                .col-lg-3

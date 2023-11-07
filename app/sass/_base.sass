@@ -119,7 +119,7 @@ h5
 	margin-top: 60px
 	display: block
 	img
-		transition-duration: 0.5s
+		
 		border-radius: 10px
 		-o-object-fit: cover
 		object-fit: cover
@@ -129,8 +129,10 @@ h5
 		width: 100%
 	&:hover
 		img
-			transition-duration: 0.5s
+			
 			box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1)
+		.par-20
+			color: $green
 .article-details
 	display: flex
 	justify-content: space-between
@@ -140,6 +142,8 @@ h5
 		font-weight: 700
 	.par-15
 		margin-top: 10px
+	button
+		margin-top: 25px
 
 .banner-paragpaph
 	font-size: 18px
@@ -336,7 +340,10 @@ p
 	font-size: 14px
 	font-weight: 500
 .breadcrumb-item
-	color: $gray-middle
+	a
+		color: $gray-middle
+		&:hover
+			color: $black
 	&.active
 		color: $gray-middle
 .tag
@@ -369,6 +376,7 @@ li
 .next-product
 	img
 		border-radius: 10px
+		width: 100%
 .swiper-documents
 	overflow: hidden
 	height: min-content
@@ -406,6 +414,8 @@ li
 	height: 64px
 	border: none
 	padding-left: 50px
+	font-size: 15px
+	letter-spacing: -0.75px
 .form-group
 
 	button
@@ -431,6 +441,20 @@ li
 		display: block!important
 		opacity: 0
 		height: 0
+.subscribe
+	img
+		width: 130px
+		height: auto
+		display: block
+	.btn 	
+		font-size: 15px
+		width: 100%
+		padding: 19px 0px 21px 0px
+		height: 64px
+	.form-control
+		border: 1px solid #878787
+	.invalid-feedback
+		color: #C30F07
 
 @media screen and (max-width: 1200px)
 	.index-title
@@ -472,6 +496,8 @@ li
 			width: 100%
 	.phone
 		font-size: 56px
+	.form-img
+		width: 80px
 
 @media screen and (max-width: 767px)
 	h2
@@ -583,9 +609,17 @@ li
 			font-size: 16px
 	.form-control
 		height: 60px
+	.form-img
+		width: 60px
+	.subscribe
+		.btn 	
+			font-size: 15px
+			width: 100%
+			padding: 19px 0px 21px 0px
+			height: 64px
 @media screen and (max-width: 575px)
 	h2
-		font-size: 32px
+		font-size: 30px
 	.article-item
 		margin-top: 35px
 

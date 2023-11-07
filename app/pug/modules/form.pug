@@ -1,22 +1,22 @@
-.container-fluid.bgc-green.mt-70.mt-lg-160.py-40.py-lg-160.form
+.container-fluid.bgc-green.py-40.py-xl-160.py-lg-160
     .container
         .row
-            .col-md-3 
+            .col-2.col-md-2.col-lg-3 
                 +img("/bg/form-bg.svg", '','form-img', '103') 
-            .col-md-6  
-                .form.mt-40.mt-lg-0
+            .col-col-8.col-md-8.col-lg-6  
+                .mt-40.mt-md-0
                     h2.c-white Давайте обсудим<br> ваш проект 
                     .par-25.c-white.mt-16.mt-lg-30 Запишитесь на личную встречу, чтобы познакомиться и обсудить все вопросы онлайн или в офисе
-                    form.form-group.needs-validation.mt-20.mt-lg-40(novalidate) 
+                    form.row.form-group.needs-validation.mt-20.mt-lg-40.px-0(novalidate) 
                         .col-12
                             input(type="text" class="form-control" class="input" placeholder="Введите имя" required).mt-16
-                            .invalid-feedback Введите отчество
+                            .invalid-feedback Введите имя
                         .col-12
-                            input(type="tel" class="form-control" class="input" placeholder="Введите номер телефона" required).mt-16
-                            .invalid-feedback Введите отчество
+                            input(type="tel" class="form-control" class="input" placeholder="Введите номер телефона" required).mt-16.mask-phone
+                            .invalid-feedback Введите номер телефона
                         .col-12    
                             input(type="email" class="form-control" class="input" placeholder="Введите email" required).mt-16
-                            .invalid-feedback.c-re Введите отчество
+                            .invalid-feedback.c-re Введите email
                         .col-12
                             button(type="submit").btn.btn-black.w-100.mt-20.mt-lg-40  Оставить заявку
-            .col-lg-3  
+            .col.col-md-2.col-lg-3   

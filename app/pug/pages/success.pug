@@ -2,15 +2,16 @@ extends /layout/page
 
 block title
     title Проекты
-
+block variables
+    - var page = 'success'
 block content
-    .container 
+    .container.mb-60.mb-lg-160  
         .row.mt-0.mt-md-10
             .col
                 nav(aria-label="breadcrumb")
                     ol.breadcrumb
                         li.breadcrumb-item
-                            a(href="/").breadcrumb-item Главная
+                            a(href="/") Главная
                         li(aria-current="page").breadcrumb-item.active Проекты
         .row.mt-10.mt-xl-40
             .col 
@@ -48,7 +49,7 @@ block content
             #tab-1.tab-pane.fade.active.show  
                 .row.cases_block
                     .col-sm-6
-                        a(href="/success/...").article-item
+                        a(href="product.html").article-item
                             img(src="upload/success/maheev_tochno_1.png" alt="").img-fluid
                             .article-details
                                 .article-details-text     
@@ -56,7 +57,7 @@ block content
                                     .par-15.c-gray-middle Акция с чеками в торговой сети "Лента"
                                 .par-15.c-gray-middle 2023
                     .col-sm-6
-                        a(href="").article-item
+                        a(href="product.html").article-item
                             img(src="upload/success/baisad_main.png" alt="").img-fluid
                             .article-details
                                 .article-details-text     
@@ -64,43 +65,7 @@ block content
                                     .par-15.c-gray-middle Акция с чеками и отдельными призовыми фондами по торговым сетям на территории Российской...
                                 .par-15.c-gray-middle 2023
                     .col-sm-6
-                        .article-item
-                            img(src="img/blog/mah.png" alt="").img-fluid
-                            .article-details
-                                .article-details-text     
-                                    .par-20 МахеевЪ: Точно в твоем вкусе 
-                                    .par-15.c-gray-middle Акция с чеками в торговой сети "Лента"
-                                .par-15.c-gray-middle 2022
-                    .col-sm-6
-                        a(href="").article-item
-                            img(src="img/product/maheev.jpg" alt="").img-fluid
-                            .article-details
-                                .article-details-text     
-                                    .par-20 МахеевЪ: Точно в твоем вкусе 
-                                    .par-15.c-gray-middle Акция с чеками в торговой сети "Лента"
-                                .par-15.c-gray-middle 2022
-                    .col-12 
-                        button.btn.gray-border-btn.btn-lg.w-100.mt-40.mt-md-60.show-content Загрузить еще
-            #tab-2.tab-pane.fade  
-                .row.cases_block
-                    .col-sm-6
-                        a(href="/success/...").article-item
-                            img(src="upload/success/maheev_tochno_1.png" alt="").img-fluid
-                            .article-details
-                                .article-details-text     
-                                    .par-20 МахеевЪ: Точно в твоем вкусе 
-                                    .par-15.c-gray-middle Акция с чеками в торговой сети "Лента"
-                                .par-15.c-gray-middle 2023
-                    .col-sm-6
-                        a(href="/success/...").article-item
-                            img(src="upload/success/baisad_main.png" alt="").img-fluid
-                            .article-details
-                                .article-details-text     
-                                    .par-20 Байсад: Все по-новому!
-                                    .par-15.c-gray-middle Акция с чеками и отдельными призовыми фондами по торговым сетям на территории Российской...
-                                .par-15.c-gray-middle 2023
-                    .col-sm-6
-                        a(href="/success/...").article-item
+                        a(href="product.html").article-item
                             img(src="upload/success/brest_main.png" alt="").img-fluid
                             .article-details
                                 .article-details-text     
@@ -108,7 +73,7 @@ block content
                                     .par-15.c-gray-middle Акция с чеками в торговой сети "Пятёрочка"
                                 .par-15.c-gray-middle 2023
                     .col-sm-6
-                        a(href="/success/...").article-item
+                        a(href="product.html").article-item
                             img(src="upload/success/baisad_igrai_main.jpg" alt="").img-fluid
                             .article-details
                                 .article-details-text     
@@ -116,7 +81,7 @@ block content
                                     .par-15.c-gray-middle Акция с чеками на территории Российской Федерации.
                                 .par-15.c-gray-middle 2023
                     .col-sm-6
-                        a(href="/success/...").article-item
+                        a(href="product.html").article-item
                             img(src="upload/success/petruha_otpusk.jpg" alt="").img-fluid
                             .article-details
                                 .article-details-text     
@@ -124,7 +89,7 @@ block content
                                     .par-15.c-gray-middle Акция с чеками в торговых сетях «Перекрёсток» и «Карусель» на территории Российской Федерации.
                                 .par-15.c-gray-middle 2023
                     .col-sm-6
-                        a(href="/success/...").article-item
+                        a(href="product.html").article-item
                             img(src="upload/success/79a6e25640e9f83538411e5d56e5e99c.jpg" alt="").img-fluid
                             .article-details
                                 .article-details-text     
@@ -132,7 +97,7 @@ block content
                                     .par-15.c-gray-middle Промоакция с кодами для покупателей продукции под торговой маркой «Своя рыбка».
                                 .par-15.c-gray-middle 2023
                     .col-sm-6
-                        a(href="/success/...").article-item
+                        a(href="product.html").article-item
                             img(src="upload/success/Maheev dzhem.png" alt="").img-fluid
                             .article-details
                                 .article-details-text     
@@ -140,7 +105,7 @@ block content
                                     .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
                                 .par-15.c-gray-middle 2023
                     .col-sm-6
-                        a(href="/success/...").article-item
+                        a(href="product.html").article-item
                             img(src="upload/success/7ddb9496366fdd85691d024f6cebe37c.jpg" alt="").img-fluid
                             .article-details
                                 .article-details-text     
@@ -148,7 +113,7 @@ block content
                                     .par-15.c-gray-middle Промоакция с чат-ботом Whats app для увеличения конверсии акции
                                 .par-15.c-gray-middle 2023
                     .col-sm-6
-                        a(href="/success/...").article-item
+                        a(href="product.html").article-item
                             img(src="upload/success/Maheev dzhem.png" alt="").img-fluid
                             .article-details
                                 .article-details-text     
@@ -156,7 +121,7 @@ block content
                                     .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
                                 .par-15.c-gray-middle 2023
                     .col-sm-6
-                        a(href="/success/...").article-item
+                        a(href="product.html").article-item
                             img(src="upload/success/7ddb9496366fdd85691d024f6cebe37c.jpg" alt="").img-fluid
                             .article-details
                                 .article-details-text     
@@ -165,10 +130,274 @@ block content
                                 .par-15.c-gray-middle 2023
                     .col-12 
                         button.btn.gray-border-btn.btn-lg.w-100.mt-40.mt-md-60.show-content Загрузить еще
+            #tab-2.tab-pane.fade  
+                .row.cases_block
+                    .col-sm-6
+                        a(href="product.html").article-item
+                            img(src="upload/success/maheev_tochno_1.png" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 МахеевЪ: Точно в твоем вкусе 
+                                    .par-15.c-gray-middle Акция с чеками в торговой сети "Лента"
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="product.html").article-item
+                            img(src="upload/success/baisad_main.png" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Байсад: Все по-новому!
+                                    .par-15.c-gray-middle Акция с чеками и отдельными призовыми фондами по торговым сетям на территории Российской...
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="product.html").article-item
+                            img(src="upload/success/brest_main.png" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Брест-Литовск: Новогодняя сыромагия
+                                    .par-15.c-gray-middle Акция с чеками в торговой сети "Пятёрочка"
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="product.html").article-item
+                            img(src="upload/success/baisad_igrai_main.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Байсад: Играй и выигрывай!
+                                    .par-15.c-gray-middle Акция с чеками на территории Российской Федерации.
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="product.html").article-item
+                            img(src="upload/success/petruha_otpusk.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Петруха: Сезон отпусков
+                                    .par-15.c-gray-middle Акция с чеками в торговых сетях «Перекрёсток» и «Карусель» на территории Российской Федерации.
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="product.html").article-item
+                            img(src="upload/success/79a6e25640e9f83538411e5d56e5e99c.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 РОК №1: По своему хотению, по рыбкиному велению!
+                                    .par-15.c-gray-middle Промоакция с кодами для покупателей продукции под торговой маркой «Своя рыбка».
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="product.html").article-item
+                            img(src="upload/success/Maheev dzhem.png" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Махеевъ: Джем да блин!
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="product.html").article-item
+                            img(src="upload/success/7ddb9496366fdd85691d024f6cebe37c.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Махеевъ: Лайки от хозяйки
+                                    .par-15.c-gray-middle Промоакция с чат-ботом Whats app для увеличения конверсии акции
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="product.html").article-item
+                            img(src="upload/success/Maheev dzhem.png" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Махеевъ: Джем да блин!
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="product.html").article-item
+                            img(src="upload/success/7ddb9496366fdd85691d024f6cebe37c.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Махеевъ: Лайки от хозяйки
+                                    .par-15.c-gray-middle Промоакция с чат-ботом Whats app для увеличения конверсии акции
+                                .par-15.c-gray-middle 2023
+                    .col-12 
+                        button.btn.gray-border-btn.btn-lg.w-100.mt-40.mt-md-60.show-content Загрузить еще
+            #tab-3.tab-pane.fade 
+                .row.cases_block
+                    .col-sm-6
+                        a(href="product.html").article-item
+                            img(src="upload/success/0f63dbb1906782e2d058eedfc5e13090.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Брендирование и мерч
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="").article-item
+                            img(src="upload/success/9fda2d4ce3ad23e3789578a84e4af8ea.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Татнефть "Колеси по России"
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="product.html").article-item
+                            img(src="upload/success/0f63dbb1906782e2d058eedfc5e13090.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Брендирование и мерч
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="").article-item
+                            img(src="upload/success/9fda2d4ce3ad23e3789578a84e4af8ea.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Татнефть "Колеси по России"
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="product.html").article-item
+                            img(src="upload/success/0f63dbb1906782e2d058eedfc5e13090.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Брендирование и мерч
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="").article-item
+                            img(src="upload/success/9fda2d4ce3ad23e3789578a84e4af8ea.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Татнефть "Колеси по России"
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="product.html").article-item
+                            img(src="upload/success/0f63dbb1906782e2d058eedfc5e13090.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Брендирование и мерч
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="").article-item
+                            img(src="upload/success/9fda2d4ce3ad23e3789578a84e4af8ea.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Татнефть "Колеси по России"
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="product.html").article-item
+                            img(src="upload/success/0f63dbb1906782e2d058eedfc5e13090.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Брендирование и мерч
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="").article-item
+                            img(src="upload/success/9fda2d4ce3ad23e3789578a84e4af8ea.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Татнефть "Колеси по России"
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="product.html").article-item
+                            img(src="upload/success/0f63dbb1906782e2d058eedfc5e13090.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Брендирование и мерч
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="").article-item
+                            img(src="upload/success/9fda2d4ce3ad23e3789578a84e4af8ea.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Татнефть "Колеси по России"
+                                .par-15.c-gray-middle 2023
+                    .col-12 
+                        button.btn.gray-border-btn.btn-lg.w-100.mt-40.mt-md-60.show-content Загрузить еще
+            #tab-4.tab-pane.fade 
+                .row.cases_block
+                    .col-sm-6
+                        a(href="product.html").article-item
+                            img(src="upload/success/0f63dbb1906782e2d058eedfc5e13090.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Брендирование и мерч
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="").article-item
+                            img(src="upload/success/9fda2d4ce3ad23e3789578a84e4af8ea.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Татнефть "Колеси по России"
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="product.html").article-item
+                            img(src="upload/success/0f63dbb1906782e2d058eedfc5e13090.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Брендирование и мерч
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="").article-item
+                            img(src="upload/success/9fda2d4ce3ad23e3789578a84e4af8ea.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Татнефть "Колеси по России"
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="product.html").article-item
+                            img(src="upload/success/0f63dbb1906782e2d058eedfc5e13090.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Брендирование и мерч
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="").article-item
+                            img(src="upload/success/9fda2d4ce3ad23e3789578a84e4af8ea.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Татнефть "Колеси по России"
+                                .par-15.c-gray-middle 2023
+            #tab-5.tab-pane.fade 
+                .row.cases_block
+                    .col-sm-6
+                        a(href="product.html").article-item
+                            img(src="upload/success/0f63dbb1906782e2d058eedfc5e13090.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Брендирование и мерч
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="").article-item
+                            img(src="upload/success/9fda2d4ce3ad23e3789578a84e4af8ea.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Татнефть "Колеси по России"
+                                .par-15.c-gray-middle 2023
+            #tab-6.tab-pane.fade 
+                .row.cases_block
+                    .col-sm-6
+                        a(href="product.html").article-item
+                            img(src="upload/success/avs/avs_stend_3.png" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Стенд "АВС Продукт" на выставке "Продэкспо-2022"
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="").article-item
+                            img(src="upload/success/avs/Essen_3.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Стенд "Эссен продакшн АГ" на выставке "Продэкспо-2022"
+                                .par-15.c-gray-middle 2023
+            #tab-7.tab-pane.fade 
+                .row.cases_block
+                    .col-sm-6
+                        a(href="product.html").article-item
+                            img(src="upload/success/314eed0b68c2fd10e336453dcc5f78f6.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Маркетинговая акция для покупателей розничных магазинов «Дочки&Сыночки»
+                                .par-15.c-gray-middle 2023
+                    .col-sm-6
+                        a(href="").article-item
+                            img(src="upload/success/2b6219fe5cfbff7658b3d0abca0d34a9.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Чайковский: Сладкий вкус Победы. Творческий конкурс
+                                .par-15.c-gray-middle 2023
             #tab-8.tab-pane.fade 
                 .row.cases_block
                     .col-sm-6
-                        a(href="/success/...").article-item
+                        a(href="product.html").article-item
                             img(src="upload/success/cvm/koffee_main.png" alt="").img-fluid
                             .article-details
                                 .article-details-text     
@@ -195,5 +424,3 @@ block content
                                 .article-details-text     
                                     .par-20 Кофейная компания Lalibela – инфорассылка
                                 .par-15.c-gray-middle 2022
-                    .col-12 
-                        button.show-content 3

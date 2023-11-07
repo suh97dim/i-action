@@ -6,13 +6,13 @@ block title
     title Услуги
 
 block content
-    .container 
+    .container.mb-60.mb-lg-160  
         .row.mt-0.mt-md-10
             .col
                 nav(aria-label="breadcrumb")
                     ol.breadcrumb
                         li.breadcrumb-item
-                            a(href="/").breadcrumb-item Главная
+                            a(href="/") Главная
                         li(aria-current="page").breadcrumb-item.active Услуги
         .row.mt-10.mt-xl-50
             .col 
@@ -31,7 +31,7 @@ block content
                     li.nav-item
                         a(href='#tab-5' data-bs-toggle="tab").nav-link Реклама
             .col.d-block.d-xl-none  
-                select.form-select.select-nav(aria-label="Default select example")
+                select.form-select.select-nav
                     option(data-target="#tab-1") IT-разработка
                     option(data-target="#tab-2") Мотивационные программы для продавцов
                     option(data-target="#tab-3") Повышение продаж
@@ -75,6 +75,15 @@ block content
                                 .advantage 
                                     .par-20 Промосайты
                                     .par-15.c-black.mt-20 Сделаем прототип, дизайн, верстку, программирование, установим коды Яндекс метрики и гугл аналитики, сделаем адаптивную верстку и верстку под мобильные устройства
+                        .row.mt-lg-40    
+                            .col-lg-4
+                                .advantage 
+                                    .par-20 Флеш-игры
+                                    .par-15.c-black.mt-20 Разработаем игру для стимулирования активности в акции: дизайн, программирование логики игры, программирование вероятности выигрыша, программирование “игра против компьютер
+                            .col-lg-4
+                                .advantage 
+                                    .par-20 Чат-боты
+                                    .par-15.c-black.mt-20 Разработаем чат-бот в WhatsApp или Telegram для регистрации участников акции, приема кассовых чеков, стимулирующих рассылок, информирования о выигрыше, сбора персональных данных для оформления приза
                 .row.mt-30.mt-lg-40.mt-xl-160  
                     .col-md-3
                         +img("/icons/it-decisions.svg")

@@ -1,0 +1,719 @@
+extends /layout/page
+
+block title
+    title Блог
+
+block content
+    .container.mb-60.mb-lg-160  
+        .row.mt-0.mt-md-10
+            .col
+                nav(aria-label="breadcrumb")
+                    ol.breadcrumb
+                        li.breadcrumb-item
+                            a(href="/").breadcrumb-item Главная
+                        li(aria-current="page").breadcrumb-item.active Блог
+        .row.mt-10.mt-xl-50
+            .col 
+                h2 Блог
+        .row.mt-10.mt-xl-60  
+            .col.d-none.d-xl-block
+                ul.nav.nav-border.justify-content-between 
+                    li.nav-item
+                        a(href='#tab-1' data-bs-toggle="tab").nav-link.active Все
+                    li.nav-item
+                        a(href='#tab-2' data-bs-toggle="tab").nav-link Маркетинговые коммуникации
+                    li.nav-item
+                        a(href='#tab-3' data-bs-toggle="tab").nav-link Реклама в интернете
+                    li.nav-item
+                        a(href='#tab-4' data-bs-toggle="tab").nav-link Стимулирование продаж
+                    li.nav-item
+                        a(href='#tab-5' data-bs-toggle="tab").nav-link Экспертная 
+                    li.nav-item
+                        a(href='#tab-6' data-bs-toggle="tab").nav-link Креатив и стратегии
+                    li.nav-item
+                        a(href='#tab-7' data-bs-toggle="tab").nav-link Производство
+                    li.nav-item
+                        a(href='#tab-8' data-bs-toggle="tab").nav-link It Разработки
+            .col.d-block.d-xl-none  
+                select.form-select.select-nav()
+                    option(data-target="#tab-1") Все
+                    option(data-target="#tab-2") Маркетинговые коммуникации
+                    option(data-target="#tab-3") Реклама в интернете
+                    option(data-target="#tab-4") Стимулирование продаж
+                    option(data-target="#tab-5") Экспертная
+                    option(data-target="#tab-6") Креатив и стратегии
+                    option(data-target="#tab-7") Производство
+                    option(data-target="#tab-8") It Разработки
+        .row.tab-content
+            #tab-1.tab-pane.fade.active.show   
+                .row.cases_block
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Чем отличаются имиджевое и рекламное продающее видео?
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-12 
+                        button.btn.gray-border-btn.btn-lg.w-100.mt-40.mt-md-60.show-content Загрузить еще
+            #tab-2.tab-pane.fade   
+                .row.cases_block
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Чем отличаются имиджевое и рекламное продающее видео?
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-12 
+                        button.btn.gray-border-btn.btn-lg.w-100.mt-40.mt-md-60.show-content Загрузить еще
+            #tab-3.tab-pane.fade   
+                .row.cases_block
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Чем отличаются имиджевое и рекламное продающее видео?
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-12 
+                        button.btn.gray-border-btn.btn-lg.w-100.mt-40.mt-md-60.show-content Загрузить еще
+            #tab-4.tab-pane.fade   
+                .row.cases_block
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Чем отличаются имиджевое и рекламное продающее видео?
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-12 
+                        button.btn.gray-border-btn.btn-lg.w-100.mt-40.mt-md-60.show-content Загрузить еще
+            #tab-5.tab-pane.fade   
+                .row.cases_block
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Чем отличаются имиджевое и рекламное продающее видео?
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-12 
+                        button.btn.gray-border-btn.btn-lg.w-100.mt-40.mt-md-60.show-content Загрузить еще
+            #tab-6.tab-pane.fade   
+                .row.cases_block
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Чем отличаются имиджевое и рекламное продающее видео?
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-12 
+                        button.btn.gray-border-btn.btn-lg.w-100.mt-40.mt-md-60.show-content Загрузить еще
+            #tab-7.tab-pane.fade   
+                .row.cases_block
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Чем отличаются имиджевое и рекламное продающее видео?
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-12 
+                        button.btn.gray-border-btn.btn-lg.w-100.mt-40.mt-md-60.show-content Загрузить еще
+            #tab-8.tab-pane.fade   
+                .row.cases_block
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Чем отличаются имиджевое и рекламное продающее видео?
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-sm-6
+                        a(href="article.html").article-item
+                            img(src="upload/news/46d94f0f4dbcdeb537e7fdaaf9520b6d.jpg" alt="").img-fluid
+                            .article-details
+                                .article-details-text     
+                                    .par-20 Как выделиться среди конкурентов с помощью видео
+                                    .par-15.c-gray-middle Промоакция с чеками, для покупателей продукции торговой марки «Махеев».
+                                    button.btn.btn-sm.btn-green(href="dsds") Читать далее
+                    .col-12 
+                        button.btn.gray-border-btn.btn-lg.w-100.mt-40.mt-md-60.show-content Загрузить еще
