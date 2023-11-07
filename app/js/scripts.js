@@ -1,4 +1,5 @@
 $(function () {
+
   $(".mask-phone").mask("+7 (999) 999-99-99");
 
   $('.hamburger').click(function () {
@@ -96,7 +97,8 @@ $(function () {
 //свайпер
 const swiper = new Swiper('.swiper-documents', {
   direction: 'horizontal',
-
+  observer: true,
+  observeParents: true,
   breakpoints: {
     320: {
       slidesPerView: 2,
